@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#wrap{
+ width: 1200px;  /* 전체 크기를 고정! */
+ margin: 0 auto; /* 위,아래는 딱 붙고, 양옆은 가운데 정렬*/
+
+}
+
+
+header{
+    width: 100%;
+    height: 150px;
+    background:rgb(62, 62, 250);
+}
+
+aside{
+    width: 30%;
+    height: 700px;
+    background:rgb(46, 168, 250);
+
+    float: left; /*왼쪽으로 붙어!*/
+
+}
+
+section{
+    width: 70%;
+    height: 700px;
+    background:rgb(103, 139, 240);
+    float: left; /*이것도 왼쪽으로...>? */
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background:rgb(16, 16, 219);
+    clear: both; /*먼데 이게 */
+}
+
+@media (max-width:1220px){
+
+    #wrap{width: 95%; }
+
+}
+
+@media (max-width:768px){
+
+    #wrap{width: 100%; }
+
+}
+
+
+@media (max-width:480px){
+
+    #wrap{width: 100%; }
+    header{height: 300px;}
+    aside{float: none; width: 100%; height: 300px;}
+    section{float: none; width: 100%; height: 300px;}
+
+}
